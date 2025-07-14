@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Install all required dependencies for Next.js AI portfolio",
+			"command": "npm install react react-dom next tailwindcss framer-motion recharts react-vertical-timeline-component pdf-parse",
+			"args": [],
+			"group": "build",
+			"problemMatcher": [
+				"$tsc"
+			]
+		},
+		{
+			"label": "Next.js: Start Dev Server",
+			"isBackground": true,
+			"type": "shell", 
+			"command": "cd ai-portfolio-site && npm run dev",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
+	]
+}
